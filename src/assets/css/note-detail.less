@@ -1,0 +1,62 @@
+#note-detail{
+  width:100%;
+  .note-empty {
+    font-size: 50px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .show-empty{
+    height:100%;
+  }
+  .note-bar{
+    border:1px solid #E9F1FC;
+    padding:8px;
+    color:#1C295D;
+    font-size:12px;
+
+    span:nth-child(-n+3){
+      margin:5px;
+    }
+    span:nth-child(n+4){
+      float: right;
+      margin-right:5px;
+      cursor:pointer;
+    }
+
+  }
+
+  .note-title{
+
+    input{
+      display:inline-block;
+      width:100%;
+      border:none;
+      outline: none;
+      font-size:20px;
+      padding:0px 20px;
+      border-bottom:1px solid #E9F1FC;
+      line-height:46px;
+    }
+  }
+
+  .editor{
+    height: ~"calc(100% - 90px)";
+    position:relative;
+
+    textarea, .preview {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    textarea {
+      border: none;
+      resize: none;
+      outline: none;
+      font-size: 14px;
+      font-family: 'Monaco', courier, monospace;
+    }
+  }
+}

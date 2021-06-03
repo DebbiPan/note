@@ -1,0 +1,90 @@
+.note-sidebar {
+  position: relative;
+  width: 290px;
+  border-right: 1px solid #5055BE;
+  background-color: #F2F7FF;
+
+  .add-note {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    color: #1C295D;
+    font-size: 12px;
+    padding: 2px 4px;
+    box-shadow: 0 0 2px 0 #1C295D;
+    border: none;
+    z-index: 1;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+  }
+
+  .notebook-title {
+    font-size: 18px;
+    color: #1C295D;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-bottom: 1px solid #1C295D;
+    display: block;
+    background-color: #DEE6F4;
+  }
+
+  .el-dropdown-link {
+    cursor: pointer;
+  }
+
+  .el-dropdown-menu__item {
+    width: 200px;
+  }
+
+  .menu {
+    display: flex;
+
+    div {
+      font-size: 12px;
+      padding: 2px 10px;
+      flex: 1;
+      border-right: 1px solid #1C295D;
+      border-bottom: 1px solid #1C295D;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .notes {
+
+    li {
+      &:nth-child(odd) {
+        background-color: #fff;
+      }
+      a {
+        display: flex;
+        padding: 0px 2px;
+        height:28px;
+        line-height:28px;
+        font-size: 12px;
+        border: 2px solid transparent;
+      }
+      .router-link-exact-active {
+        border: 2px solid #81c0f3;
+        border-radius: 3px;
+      }
+      span {
+        padding: 0 10px;
+        flex: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
